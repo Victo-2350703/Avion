@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Pile<T> where T:IEquatable<T>
+    public class Pile<T> where T:IComparable<T>
     {
         private T[] lesValeurs;
         private int index;
