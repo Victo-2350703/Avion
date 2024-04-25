@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{CDB456C3-190A-4A53-B9FB-F073D1A1497F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAvion", "PAvion\PAvion.csproj", "{A4B9DE0B-F75F-41A7-82A4-059F80CA81FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDB456C3-190A-4A53-B9FB-F073D1A1497F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB456C3-190A-4A53-B9FB-F073D1A1497F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB456C3-190A-4A53-B9FB-F073D1A1497F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB456C3-190A-4A53-B9FB-F073D1A1497F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B9DE0B-F75F-41A7-82A4-059F80CA81FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B9DE0B-F75F-41A7-82A4-059F80CA81FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B9DE0B-F75F-41A7-82A4-059F80CA81FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B9DE0B-F75F-41A7-82A4-059F80CA81FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B9820D4-3BE9-4729-8F97-FFABB446AF40}
+	EndGlobalSection
+EndGlobal
