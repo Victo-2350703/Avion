@@ -52,7 +52,7 @@ namespace ClassLibrary
         }
 
         /// <summary>
-        /// acceasseur sur experience
+        /// accesseur sur experience
         /// </summary>
         public string Poste
         {
