@@ -28,7 +28,7 @@
             private set
             {
                 nom = value;
-                if (nom != null)  throw new ArgumentNullException(nameof(nom));
+                if (value != null)  throw new ArgumentNullException(nameof(nom));
                 if (this.Nom.Length == 0) throw new ArgumentException("le nom ne doit pas etre vide");
             }
         }
