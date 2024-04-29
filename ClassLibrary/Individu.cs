@@ -3,7 +3,7 @@
     /// <summary>
     /// classe Individu
     /// </summary>
-    public class Individu:IComparable<Individu>, IEquatable<Individu>
+    public class Individu : IComparable<Individu>, IEquatable<Individu>
     {
         private string nom;
 
@@ -22,13 +22,13 @@
         /// <summary>
         /// accesseur sur nom
         /// </summary>
-        public string Nom 
-        { 
+        public string Nom
+        {
             get => nom;
             private set
             {
                 nom = value;
-                if (nom != null)  throw new ArgumentNullException(nameof(nom));
+                if (nom != null) throw new ArgumentNullException(nameof(nom));
                 if (this.Nom.Length == 0) throw new ArgumentException("le nom ne doit pas etre vide");
             }
         }
