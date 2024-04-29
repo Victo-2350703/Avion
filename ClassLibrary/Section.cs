@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class Section
+    public class Section
     {
+
     }
 }

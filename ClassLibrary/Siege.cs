@@ -11,15 +11,17 @@ namespace ClassLibrary
     /// </summary>
     public class Siege:IComparable<Siege>,IEquatable<Siege>
     {
-        private int numSiege;
+        private int coordSiegeReserve;
+        private string classe;
 
         /// <summary>
         /// creer de beaux sieges
         /// </summary>
-        /// <param name="numSiege">numero de siege</param>
-        public Siege(int numSiege)
+        /// <param name="coordSiegeReserve">les coordonne de siege reserver</param>
+        public Siege(int coordSiegeReserve, string classe)
         {
-            this.NumSiege = numSiege;
+            this.CoordSiegeReserve = coordSiegeReserve;
+            this.Classe = classe;
         }
 
         /// <summary>
@@ -30,7 +32,7 @@ namespace ClassLibrary
         public int CompareTo(Siege? other)
         {
             if (other == null) return 1;
-            return NumSiege.CompareTo(other.NumSiege);
+            return CoordSiegeReserve.CompareTo(other.CoordSiegeReserve);
         }
 
         /// <summary>
@@ -41,22 +43,32 @@ namespace ClassLibrary
         public bool Equals(Siege? other)
         {
             if (other == null) return false;
-            if (NumSiege.Equals(other.NumSiege)) return true;
+            if (CoordSiegeReserve.Equals(other.CoordSiegeReserve)) return true;
             else return false;
         }
 
         /// <summary>
-        /// l'accesseur sur le numero de sieges
+        /// l'accesseur sur les coordonner de siege
         /// </summary>
-        public int NumSiege 
+        public int CoordSiegeReserve
         { 
-            get => numSiege;
+            get => coordSiegeReserve;
             private set 
             { 
-                numSiege = value;
-                if (numSiege > 0) throw new ArgumentException("le numero de sieges ne doit etre negatif");
+                coordSiegeReserve = value;
+                if (coordSiegeReserve > 0) throw new ArgumentException("les coordonne de siege ne doit pas etre negatif");
             }
         }
 
+        public string Classe 
+        { 
+            get => classe;
+            private set 
+            { 
+                classe = value;
+                if (value != null) throw new ArgumentNullException(nameof(classe));
+                if (this.Classe.Length == 0) throw new ArgumentException("la classe ne doit pas etre vide");
+            }
+        }
     }
 }

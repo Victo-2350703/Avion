@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-<<<<<<< HEAD
     /// <summary>
-    /// un pilote
+    /// un membre d'equipage
     /// </summary>
     public class Equipage : Individu, IComparable<Equipage>, IEquatable<Equipage>
-=======
-    internal class Equipage
->>>>>>> 74c4e95cfb09edc9544cf2a969b0cefb7eef0eac
     {
         private string poste;
 
@@ -64,7 +60,6 @@ namespace ClassLibrary
             private set
             {
                 poste = value;
-
 
                 if (value != null) throw new ArgumentNullException(nameof(poste));
                 if (this.Poste.Length == 0) throw new ArgumentException("le poste ne doit pas etre vide");
