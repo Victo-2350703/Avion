@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+<<<<<<< HEAD
     /// <summary>
     /// un pilote
     /// </summary>
     public class Equipage : Individu, IComparable<Equipage>, IEquatable<Equipage>
+=======
+    internal class Equipage
+>>>>>>> 74c4e95cfb09edc9544cf2a969b0cefb7eef0eac
     {
         private string poste;
 
