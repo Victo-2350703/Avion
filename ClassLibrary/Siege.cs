@@ -60,6 +60,10 @@ namespace ClassLibrary
             }
         }
 
+
+        /// <summary>
+        /// accesseur sur la classe du siege
+        /// </summary>
         public string Classe
         {
             get => classe;

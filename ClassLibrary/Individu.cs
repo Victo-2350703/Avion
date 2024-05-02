@@ -20,6 +20,8 @@
         }
 
         /// <summary>
+<<<<<<< HEAD
+=======
         /// accesseur sur nom
         /// </summary>
         public string Nom
@@ -34,6 +36,7 @@
         }
 
         /// <summary>
+>>>>>>> 74c4e95cfb09edc9544cf2a969b0cefb7eef0eac
         /// interface de comparaison
         /// </summary>
         /// <param name="other">autre individu</param>
@@ -57,6 +60,22 @@
             if (other == null) return false;
             if (Nom.Equals(other.Nom)) return true;
             else return false;
+        }
+
+
+        /// <summary>
+        /// accesseur sur nom
+        /// </summary>
+        public string Nom
+        {
+            get => nom;
+            private set
+            {
+                nom = value;
+
+                if (value != null) throw new ArgumentNullException(nameof(nom));
+                if (this.Nom.Length == 0) throw new ArgumentException("le nom ne doit pas etre vide");
+            }
         }
     }
 }
