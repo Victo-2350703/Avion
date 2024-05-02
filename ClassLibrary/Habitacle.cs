@@ -12,8 +12,7 @@ namespace ClassLibrary
     /// </summary>
     public class Habitacle: IEquatable<Habitacle>, IComparable<Habitacle>
     {
-<<<<<<< HEAD
-=======
+
         private Rangee[] rangee;
 
         /// <summary>
@@ -70,7 +69,6 @@ namespace ClassLibrary
                 rangee = value;
             }
         }
->>>>>>> daed78fe9bb43d30d7d8f8e16f2f2b428ccb3417
 
     }
 
