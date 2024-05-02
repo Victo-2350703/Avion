@@ -51,15 +51,19 @@ namespace ClassLibrary
         /// l'accesseur sur les coordonner de siege
         /// </summary>
         public int CoordSiegeReserve
-        { 
+        {
             get => coordSiegeReserve;
-            private set 
-            { 
+            private set
+            {
                 coordSiegeReserve = value;
                 if (coordSiegeReserve > 0) throw new ArgumentException("les coordonne de siege ne doit pas etre negatif");
             }
         }
 
+
+        /// <summary>
+        /// accesseur sur la classe du siege
+        /// </summary>
         public string Classe 
         { 
             get => classe;
